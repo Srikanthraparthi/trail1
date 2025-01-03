@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="hero">
+        <h1>Hello, I'm Sai Srikanta</h1>
+        <p>Tech Enthusiast | Passionate Developer | Problem Solver</p>
+        <!-- Add animated image here -->
+        <div class="hero-image">
+            <img src="../images/profile.jpg" alt="Your Image">
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hello, and thank you for exploring my portfolio! I am Sai Srikanta Seemaladari, a passionate software developer and tech enthusiast based in Karimnagar, Telangana.
+        </p>
+        <p>
+            With a B.Tech in Computer Science and Engineering from KITS(S) (72%), and a strong academic foundation from SR College (Intermediate) and Ratnam Global High School, I have always been committed to academic and technical excellence.
+        </p>
+        <p>Over the years, I have led and contributed to various impactful projects:</p>
+        <ol>
+            <li>
+                <strong>Online Slot Booking System:</strong> A robust web application built with Python and Django, streamlining sports slot bookings with automated email confirmations and admin-user interactions.
+            </li>
+            <li>
+                <strong>Smart E-Bus Pass:</strong> An Android app for managing bus passes with integrated route management, real-time updates, and secure payment gateways, developed using Java and MySQL.
+            </li>
+        </ol>
+        <p>
+            In addition to technical skills, I am proficient in Power BI, SQL, and programming languages like Java and Python. My ability to lead teams and adapt to new challenges has been proven through achievements like organizing a 24-hour hackathon and training peers in advanced tools.
+        </p>
+        <p>
+            Beyond coding, I actively engage in learning new technologies and mentoring others. My certifications in Data Science, Web Development, and SQL reflect my commitment to growth and excellence in the tech field.
+        </p>
+        <p>
+            Through this portfolio, I aim to showcase not just my technical expertise but also my enthusiasm for collaborative projects and continuous learning. Feel free to reach out through my LinkedIn or explore my projects on GitHub.
+        </p>
+        <p>Let’s connect and create something amazing together!</p>
+    </section>
+    
+    
+
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <p>Here’s a brief overview of my professional journey and achievements.</p>
+        <a href="../images/SRIKANTA_RESUME.pdf" target="_blank" class="resume-button">View Resume</a>
+        <a href="../images/SRIKANTA_RESUME.pdf" download class="resume-button">Download Resume</a>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container" id="skills-container">
+            <!-- Initially visible skills -->
+            <div class="skill">
+                <img src="../images/java-icon.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <img src="../images/python.jpeg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="../images/webdev.jpeg" alt="Web Development">
+                <p>Web Development</p>
+            </div>
+            <div class="skill">
+                <img src="../images/AI.jpg" alt="AI">
+                <p>Artificial Intelligence</p>
+            </div>
+            <div class="skill">
+                <img src="../images/Gen.jpeg" alt="Genai">
+                <p>Generative AI</p>
+            </div>
+            <div class="skill">
+                <img src="../images/SQL.jpeg" alt="SQL">
+                <p>Databases (SQL, MySQL)</p>
+            </div>
+    
+            <!-- Initially hidden skills -->
+            <div class="skill more-skill" style="display:none;">
+                <img src="../images/power-bi.png" alt="Power BI">
+                <p>Power BI</p>
+            </div>
+            <div class="skill more-skill" style="display:none;">
+                <img src="../images/Excel.jpeg" alt="Excel">
+                <p>Excel</p>
+            </div>
+            <div class="skill more-skill" style="display:none;">
+                <img src="../images/cloud.png" alt="cloud">
+                <p>Cloud Computing</p>
+            </div>
+            <div class="skill more-skill" style="display:none;">
+                <img src="../images/Data-Science.jpeg" alt="Ds">
+                <p>Data Science</p>
+            </div>
+            <div class="skill more-skill" style="display:none;">
+                <img src="../images/ML.jpeg" alt="ML">
+                <p>Machine Learning</p>
+            </div>
+            <div class="skill more-skill" style="display:none;">
+                <img src="../images/communication.jpeg" alt="Communication">
+                <p>Communication</p>
+            </div>
+
+        </div>
+        <!-- More button to toggle visibility -->
+        <button id="moreSkillsBtn" class="more-skills-btn">More</button>
+    </section>
+    
+    
+
+    <section id="trainings" class="section">
+        <h2>Trainings</h2>
+        <div class="trainings-container">
+            <div class="training-card" onclick="showContent('powerbi')">
+                <img src="../images/Training(BI).jpg" alt="Power BI" class="training-image">
+                <p class="training-title">Power BI Training</p>
+            </div>
+            <div class="training-card" onclick="showContent('python')">
+                <img src="../images/Training(python).jpg" alt="Pyton Training" class="training-image">
+                <p class="training-title">Python Training</p>
+            </div>
+            <div class="training-card" onclick="showContent('data-science')">
+                <img src="../images/Training(DS).jpg" alt="ds" class="training-image">
+                <p class="training-title">Data Science Training</p>
+            </div>
+        </div>
+        <div id="training-content">
+        </div>
+    </section>
+    
+
+    <section id="certifications" class="certificates-section">
+        <h2>My Certificates</h2>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <a href="../images/Communication.pdf" target="_blank">
+                    <img src="../images/communication(Linkedin).png" alt="Communication" class="certificate-img">
+                    <p class="certificate-name">Communication Foundations</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/Git and GitHub.pdf" target="_blank">
+                    <img src="../images/Git.png" alt="Git" class="certificate-img">
+                    <p class="certificate-name">Git & GitHub</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/Excel.pdf" target="_blank">
+                    <img src="../images/excel.png" alt="excel" class="certificate-img">
+                    <p class="certificate-name">Excel</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/AI for Beginners.pdf" target="_blank">
+                    <img src="../images/AI for Beginners.png" alt="AI" class="certificate-img">
+                    <p class="certificate-name">AI for Beginners</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/SQL(Basic).pdf" target="_blank">
+                    <img src="../images/SQL.png" alt="SQL Certificate" class="certificate-img">
+                    <p class="certificate-name">Hackerrank SQL Basic</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/SQL(intermediate).pdf" target="_blank">
+                    <img src="../images/SQL(Inter).png" alt="SQL Certificate" class="certificate-img">
+                    <p class="certificate-name">Hackerrank SQL Intermediate</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/AI-Cloud.pdf" target="_blank">
+                    <img src="../images/AI-Cloud.png" alt="Ai" class="certificate-img">
+                    <p class="certificate-name">Emerging Technologies</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/Enterprise DS.pdf" target="_blank">
+                    <img src="../images/Enterprise.png" alt="Ds" class="certificate-img">
+                    <p class="certificate-name">Getting Started with Enterprise Data Science</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/Journey to cloud.pdf" target="_blank">
+                    <img src="../images/Journey to cloud.png" alt="Cloud" class="certificate-img">
+                    <p class="certificate-name">Journey to Cloud</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/DataScience.pdf" target="_blank">
+                    <img src="../images/Datascience.png" alt="Ds" class="certificate-img">
+                    <p class="certificate-name">Introduction to Data Science</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/Appreciation.pdf" target="_blank">
+                    <img src="../images/LOA.png" alt="LOA" class="certificate-img">
+                    <p class="certificate-name">Appreciation Certificate</p>
+                </a>
+            </div>
+            <div class="certificate-card">
+                <a href="../images/Probelm Solving(Basic).pdf" target="_blank">
+                    <img src="../images/C(Basic).png" alt="C" class="certificate-img">
+                    <p class="certificate-name">Hackerrank Probelm Solving(Basic)</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A brief description of your first project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A brief description of your second project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>A brief description of your third project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-icons-container">
+            <!-- Email Icon -->
+            <a href="mailto:srikanta.srikant20@gmail.com" class="contact-icon" title="Email Me" target="_blank">
+                <img src="../images/email.jpeg" alt="Email Icon">
+            </a>
+        
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/sai-srikanta" class="contact-icon" title="Connect on LinkedIn" target="_blank">
+                <img src="../images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+        
+            <!-- GitHub Icon -->
+            <a href="https://github.com/your-github-profile" class="contact-icon" title="Visit my GitHub" target="_blank">
+                <img src="../images/github.png" alt="Git Icon">
+            </a>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2025 SSK. All rights reserved.</p>
+    </footer>
+
+     <script src="../js/main.js"></script>
+     
+
+    
+</body>
+</html>
